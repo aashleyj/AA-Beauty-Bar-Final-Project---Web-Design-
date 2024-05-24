@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title> User Account </title>
+    <link rel = "icon" type = "img/png" href = "icon.png">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+    body {
+        background-image: url("peach.jpg");
+        background-size: cover;
+	    background-repeat: no-repeat;
+        font-family: Tahoma;
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 ;
+        width: 90%;
+        margin: auto;
+        max-width: 1200px;
+    }
+    .logo img {
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        max-height: 100px;
+    }
+    .navbuttons {
+        display: flex;
+    }
+    .navbuttons a {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: lightcoral;
+        background-color: rgb(247, 221, 202);
+        font-size: 35px;
+        margin-left: 15px;
+    }
+    .navbuttons1 {
+        display: flex;
+        margin-left: 368px;
+    }
+    .navbuttons1 a, .dropbtn, .dropdown-content a  {
+        text-decoration: none;
+        color: lightcoral;
+        font-weight: 600;
+    }
+    .navbuttons1 li, .dropbtn  {
+        float: left;
+        font-size: 25px;
+        background-color:rgb(247, 221, 202);
+        padding: 15px;
+        border-radius: 5px;
+        margin-left: 15px;
+        border: none;
+    }
+    .navbuttons1 li:hover, .navbuttons a:hover, .dropdown-content a:hover  {
+        background-color:rgb(245, 228, 217);
+    }
+    ul {
+        list-style-type: none;
+    }
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: rgb(247, 221, 202);
+        width: 160px;
+    }
+    .dropdown-content a {
+        padding: 10px;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {display: block;}
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #content1 {
+        padding: 5px 25px 25px 25px;
+        background-color: rgb(255, 204, 211);
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    .icon-container {
+        margin-top: 15px;
+        text-align: center;
+        height: 100px;
+    }
+    h1 {
+        margin-top: 45px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    </style>
+</head>
+<body>
+    <nav class = "navigation">
+        <div class = "logo">
+            <img src = "header.jpg" alt="small logo">
+        </div>
+
+        <div class = "navbuttons1">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About Us </a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"> Products </button>
+                <div class="dropdown-content">
+                    <a href="blushes.html"> Blushes </a>
+                    <a href="lipstick.html"> Lipstick </a>
+                    <a href="skincare.html"> Skincare </a>
+                </div>
+        </div>
+
+        <div class = "navbuttons">
+            <a href = "user.html" class = "nav-user">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href = "cart.html" class = "nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class = "container">
+        <div id ="content1">
+            <div class = "icon-container">
+                <i class="fa-solid fa-user fa-8x"></i>
+            </div>
+            <h1> USER ACCOUNT </h1>
+            <h3 style="text-align: center;"> Followers 15 </h3> 
+            <h3 style="text-align: center;"> Following 10 </h3>
+            <h3> Usermame: @aashley11 </h3>
+            <h3> Name: Ashley D. Jimenez </h3>
+            <h3> Address: Mandaluyong City</h3>
+            <h3> Phone Number: 0945-926-2345</h3>
+            
+        </div>
+    </div>
+</body>
+</html>

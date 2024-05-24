@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 ;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+.logo img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    max-height: 100px;
+}
+.navbuttons {
+    display: flex;
+}
+.navbuttons a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: lightcoral;
+    background-color: rgb(247, 221, 202);
+    font-size: 35px;
+    margin-left: 15px;
+}
+.navbuttons1 {
+    display: flex;
+    margin-left: 405px;
+}
+.navbuttons1 a, .dropbtn, .dropdown-content a  {
+    text-decoration: none;
+    color: lightcoral;
+    font-weight: 600;
+}
+.navbuttons1 li, .dropbtn  {
+    float: left;
+    font-size: 25px;
+    background-color:rgb(247, 221, 202);
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: none;
+}
+.navbuttons1 li:hover, .navbuttons a:hover, .dropdown-content a:hover  {
+    background-color:rgb(245, 228, 217);
+}
+ul {
+    list-style-type: none;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: rgb(247, 221, 202);
+    width: 160px;
+}
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+}
+.dropdown:hover .dropdown-content {display: block;}
+#partner {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    width: 80%;
+    margin: 50px auto;
+}
+.partner-heading h3 {
+    font-size: 30px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 100px;
+}
+.logo-container img {
+    height: 60px;
+    object-position: center;
+    object-fit: contain;
+    opacity: 0.8;
+    filter: grayscale(1);
+    transition: all ease 0.3s;
+}
+.logo-container img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+#main2 {
+    width: 85%;
+    padding: 40px 0 40px 50px;
+    border-radius: 30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgb(255, 211, 211);
+}
+.main2-image {
+    margin-left: 50px;
+}
+.main2-text h2 {
+    font-size: 75px;
+    color: black;
+    font-weight: 700;
+}
+.main2-text span {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.main2-text p {
+    font-size: 15px;
+    margin-right: 20px;
+}
+.main2-text h4 {
+    text-align: center;
+}
+
+

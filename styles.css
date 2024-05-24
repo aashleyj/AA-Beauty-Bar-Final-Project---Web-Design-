@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 ;
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+.logo img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    max-height: 100px;
+}
+.navbuttons {
+    display: flex;
+}
+.navbuttons a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: lightcoral;
+    background-color: rgb(247, 221, 202);
+    font-size: 35px;
+    margin-left: 15px;
+}
+.navbuttons1 {
+    display: flex;
+    margin-left: 405px;
+}
+.navbuttons1 a, .dropbtn, .dropdown-content a  {
+    text-decoration: none;
+    color: lightcoral;
+    font-weight: 600;
+}
+.navbuttons1 li, .dropbtn  {
+    float: left;
+    font-size: 25px;
+    background-color:rgb(247, 221, 202);
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: none;
+}
+.navbuttons1 li:hover, .navbuttons a:hover, .dropdown-content a:hover  {
+    background-color:rgb(245, 228, 217);
+}
+ul {
+    list-style-type: none;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: rgb(247, 221, 202);
+    width: 160px;
+}
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+}
+.dropdown:hover .dropdown-content {display: block;}
+#main {
+    width: 85%;
+    padding-left: 105px;
+    border-radius: 30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: rgb(255, 211, 211);
+}
+.main-text span {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.main-text h2 {
+    font-size: 95px;
+    color: black;
+    font-weight: 600;
+}
+.main-text p {
+    font-size: 18px;
+    margin-right: 20px;
+}
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    max-width: 1425px;
+    width: 200%;
+    margin: 35px 0 50px 135px;
+}
+.products-grid-box {
+    transition: transform 0.5s;
+}
+.products-grid-box:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+
+
+

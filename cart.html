@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>AA Beauty Bar</title>
+    <link rel = "icon" type = "img/png" href = "icon.png">
+    <link rel = "stylesheet" href = "styles4.css">
+    <script src="script4.js"></script>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class = "navigation">
+        <div class = "logo">
+            <img src = "header.jpg" alt="small logo">
+        </div>
+
+        <div class = "navbuttons1">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About Us </a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"> Products </button>
+                <div class="dropdown-content">
+                    <a href="blushes.html"> Blushes </a>
+                    <a href="lipstick.html"> Lipstick </a>
+                    <a href="skincare.html"> Skincare </a>
+                </div>
+        </div>
+
+        <div class = "navbuttons">
+            <a href = "user.html" class = "nav-user">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href = "cart.html" class = "nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </nav>
+
+    <h1> SHOPPING CART </h1>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <h2>Total Price: <span id="total-price">0</span></h2>
+
+    <hr style="height:5px;color:lightcoral;background-color:lightcoral">
+
+    <h1> ORDER FORM </h1>
+    <form id="order-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
+        <br> <br>
+        <label for="contact-number">Contact Number:</label>
+        <input type="text" id="contact-number" required>
+        <br> <br>
+        <label for="address">Home Address:</label>
+        <input type="text" id="address" required>
+        <br> <br>
+        <button type="button" id="place-order">Place Order</button>
+    </form>
+</body>
+</html>

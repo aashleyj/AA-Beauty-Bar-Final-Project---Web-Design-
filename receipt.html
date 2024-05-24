@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "icon" type = "img/png" href = "icon.png">
+    <title> AA Beauty Bar Receipt </title>
+    <style>
+        body {
+            background-image: url("peach.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Tahoma;
+        }
+        #receipt-details{
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            padding: 20px;
+            font-size: 20px;
+            font-family: Tahoma;
+        }
+        h2 {
+            text-align: center;
+            font-family: Tahoma;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2> Receipt of AA Beauty Bar </h2>
+    <div id="receipt-details"></div>
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const contactNumber = urlParams.get('contactNumber');
+            const address = urlParams.get('address');
+
+            let receiptDetails = `
+                <div><strong>Name:</strong> ${name}</div>
+                <div><strong>Contact Number:</strong> ${contactNumber}</div>
+                <div><strong>Home Address:</strong> ${address}</div>
+                <h3>Order Details:</h3>
+                <ul>
+            `;
+
+            let totalPrice = 0;
+            for (let param of urlParams.entries()) {
+                if (param[0].startsWith('product')) {
+                    const index = param[0].substring(7);
+                    const quantity = urlParams.get(`quantity${index}`);
+                    const price = urlParams.get(`price${index}`);
+                    receiptDetails += `<li>${quantity} x ${param[1]} @ ${price}</li>`;
+                    totalPrice += parseFloat(price.replace('₱', '')) * quantity;
+                }
+            }
+
+            receiptDetails += `</ul><div><strong>Total:</strong> ₱${totalPrice.toFixed(2)}</div>`;
+            document.getElementById('receipt-details').innerHTML = receiptDetails;
+        }
+    </script>
+</body> 
+</html>
